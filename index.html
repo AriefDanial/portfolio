@@ -12,49 +12,84 @@
 <body>
   <div class="bg-gradient" aria-hidden="true"></div>
   <main class="container">
-    <header class="hero animate-in">
-      <div class="avatar" aria-hidden="true"></div>
-      <h1>Arief Danial Bin Ismail</h1>
-      <p class="tagline">Software Engineer Intern</p>
-      <p class="bio">
-        Hi! I'm Arief Danial, a software engineer intern building and learning. 
-        Feel free to say hello or check out my links below.
-      </p>
-    </header>
+    <!-- Profile card -->
+    <article class="card card-hero animate-in">
+      <header class="hero">
+        <div class="avatar" aria-hidden="true"></div>
+        <h1>Arief Danial Bin Ismail</h1>
+        <p class="tagline">Software Engineer Intern</p>
+        <p class="bio">
+          Hi! I'm Arief Danial, a software engineer intern building and learning. 
+          Feel free to say hello or check out my links below.
+        </p>
+        <div class="hero-meta">
+          <span class="meta-item">📧 arief_danial@outlook.com</span>
+          <span class="meta-item">🔗 Open to opportunities</span>
+        </div>
+      </header>
+    </article>
 
-    <section class="section about-section animate-in">
-      <h2 class="section-title">About</h2>
+    <!-- About card -->
+    <section class="card section animate-in">
+      <h2 class="card-title">About me</h2>
       <p class="about-text">
         I'm passionate about building clean, user-friendly software and always eager to learn new technologies. 
         Currently interning as a software engineer and growing my skills every day.
       </p>
+      <ul class="about-list">
+        <li>Focus on web development and clean code</li>
+        <li>Enjoy problem-solving and picking up new tools</li>
+        <li>Committed to learning in public and sharing progress</li>
+      </ul>
     </section>
 
-    <section class="section skills-section animate-in">
-      <h2 class="section-title">Skills &amp; interests</h2>
+    <!-- Skills card -->
+    <section class="card section animate-in">
+      <h2 class="card-title">Skills &amp; interests</h2>
+      <p class="card-desc">Technologies and areas I work with or explore.</p>
       <div class="skills-wrap">
         <span class="skill-pill">Web Development</span>
         <span class="skill-pill">JavaScript</span>
         <span class="skill-pill">HTML &amp; CSS</span>
         <span class="skill-pill">Problem solving</span>
+        <span class="skill-pill">Git</span>
         <span class="skill-pill">Learning in public</span>
       </div>
     </section>
 
-    <section class="section links-section animate-in">
-      <h2 class="section-title">Connect</h2>
+    <!-- Projects card (placeholder – add your real projects later) -->
+    <section class="card section animate-in">
+      <h2 class="card-title">Projects</h2>
+      <p class="card-desc">Things I've built or contributed to.</p>
+      <div class="project-list">
+        <div class="project-card">
+          <h3 class="project-name">Portfolio site</h3>
+          <p class="project-desc">This page — a simple, responsive portfolio built with HTML, CSS, and a bit of JavaScript.</p>
+          <a href="https://github.com/AriefDanial/portfolio" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+        </div>
+        <div class="project-card project-card-muted">
+          <h3 class="project-name">More coming soon</h3>
+          <p class="project-desc">I'll add more projects here as I build them. Stay tuned!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Connect card -->
+    <section class="card section animate-in">
+      <h2 class="card-title">Connect</h2>
+      <p class="card-desc">Find me on these platforms or drop an email.</p>
       <div class="links">
         <a href="https://github.com/AriefDanial" target="_blank" rel="noopener" class="link-card">
+          <span class="link-label">GitHub</span>
           <span class="link-icon">→</span>
-          <span>GitHub</span>
         </a>
         <a href="https://www.linkedin.com/in/ariefdanialismail/" target="_blank" rel="noopener" class="link-card">
+          <span class="link-label">LinkedIn</span>
           <span class="link-icon">→</span>
-          <span>LinkedIn</span>
         </a>
         <a href="mailto:arief_danial@outlook.com" class="link-card">
+          <span class="link-label">Email</span>
           <span class="link-icon">→</span>
-          <span>Email</span>
         </a>
       </div>
     </section>
