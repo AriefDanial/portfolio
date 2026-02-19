@@ -213,6 +213,29 @@ body {
   line-height: 1.65;
 }
 
+.resume-btn {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.65rem 1.35rem;
+  background: var(--accent);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--radius);
+  transition: background 0.2s, transform 0.15s;
+  box-shadow: 0 2px 12px rgba(126, 184, 218, 0.35);
+}
+
+.resume-btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+body[data-theme="dark"] .resume-btn {
+  color: #0f0f12;
+}
+
 .hero-meta {
   display: flex;
   flex-wrap: wrap;
