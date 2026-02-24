@@ -15,7 +15,7 @@ A simple one-page portfolio.
    - The tagline and bio text
    - The link URLs (GitHub, LinkedIn, email)
 
-2. (Optional) Replace the avatar: add an `<img>` inside the `.avatar` div with your photo, or keep the gradient circle.
+2. **Profile photo:** Save your photo in this folder as **`avatar.png`** (or `avatar.jpg`). The hero section will show it. If the file is missing, initials "AD" are shown instead.
 
 ## Put it on GitHub & GitHub Pages
 
