@@ -1,6 +1,6 @@
 # My Portfolio
 
-A simple one-page portfolio you can host on GitHub Pages.
+A simple one-page portfolio.
 
 ## What's inside
 
