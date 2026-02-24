@@ -3,91 +3,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Arief Danial | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <button type="button" class="theme-toggle" aria-label="Switch to dark mode" title="Switch to dark mode">
+  <button type="button" class="theme-toggle" aria-label="Switch theme" title="Switch theme">
     <span class="theme-icon" aria-hidden="true">🌙</span>
   </button>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a href="#home" class="logo">
+      <span class="logo-icon" aria-hidden="true">A</span>
+      <div class="logo-text">
+        <span class="logo-name">ARIEF</span>
+        <span class="logo-sub">DANIAL BIN ISMAIL</span>
+      </div>
+    </a>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#education">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="resume.pdf" target="_blank" rel="noopener" class="btn-header">Download CV</a>
+  </header>
+
   <div class="bg-gradient" aria-hidden="true"></div>
-  <main class="container">
-    <!-- Profile card -->
-    <article class="card card-hero animate-in">
-      <header class="hero">
-        <img
-          src="https://ui-avatars.com/api/?name=Arief+Danial&size=200&background=7eb8da&color=fff&rounded=true&bold=true"
-          alt="Arief Danial"
-          class="avatar"
-          width="100"
-          height="100"
-        />
-        <h1>Arief Danial Bin Ismail</h1>
-        <p class="tagline">Software Engineer Intern</p>
-        <p class="bio">
-          Hi! I'm Arief Danial, a software engineer intern building and learning. 
-          Feel free to say hello or check out my links below.
-        </p>
-        <a href="resume.pdf" target="_blank" rel="noopener" class="resume-btn">View my resume</a>
-        <div class="hero-meta">
-          <span class="meta-item">📧 arief_danial@outlook.com</span>
-          <span class="meta-item">🔗 Open to opportunities</span>
+
+  <main class="main-content">
+    <!-- Hero -->
+    <section id="home" class="hero-section">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="hero-category">Software Engineering</p>
+          <h1 class="hero-title">
+            <span class="hero-name">Arief</span>
+            <span class="hero-name-accent">Danial</span>
+          </h1>
+          <p class="hero-tagline">Software Engineer Intern & Tech Enthusiast</p>
+          <p class="hero-sub">Building and learning in public.</p>
+          <p class="hero-desc">
+            Focused on clean, user-friendly software and modern tech. I work with
+            <strong>HTML/CSS</strong>, <strong>JavaScript</strong>, and enjoy
+            <strong>problem-solving</strong> and picking up new tools every day.
+          </p>
+          <a href="#projects" class="btn-primary">View Projects</a>
         </div>
-      </header>
-    </article>
-
-    <!-- About card -->
-    <section class="card section animate-in">
-      <h2 class="card-title">About me</h2>
-      <p class="about-text">
-        I'm passionate about building clean, user-friendly software and always eager to learn new technologies. 
-        Currently interning as a software engineer and growing my skills every day.
-      </p>
-      <ul class="about-list">
-        <li>Focus on web development and clean code</li>
-        <li>Enjoy problem-solving and picking up new tools</li>
-        <li>Committed to learning in public and sharing progress</li>
-      </ul>
-    </section>
-
-    <!-- Skills card -->
-    <section class="card section animate-in">
-      <h2 class="card-title">Skills &amp; interests</h2>
-      <p class="card-desc">Technologies and areas I work with or explore.</p>
-      <div class="skills-wrap">
-        <span class="skill-pill">Web Development</span>
-        <span class="skill-pill">JavaScript</span>
-        <span class="skill-pill">HTML &amp; CSS</span>
-        <span class="skill-pill">Problem solving</span>
-        <span class="skill-pill">Git</span>
-        <span class="skill-pill">Learning in public</span>
+        <div class="hero-image-wrap">
+          <img
+            src="https://ui-avatars.com/api/?name=Arief+Danial&size=400&background=61dafb&color=0a0a14&rounded=true&bold=true"
+            alt="Arief Danial"
+            class="hero-avatar"
+            width="280"
+            height="340"
+          />
+        </div>
       </div>
     </section>
 
-    <!-- Projects card (placeholder – add your real projects later) -->
-    <section class="card section animate-in">
-      <h2 class="card-title">Projects</h2>
-      <p class="card-desc">Things I've built or contributed to.</p>
+    <!-- Linguistic & Technical - two columns -->
+    <section class="mid-section">
+      <div class="mid-grid">
+        <!-- Linguistic Versatility -->
+        <div class="block card-block">
+          <h2 class="block-title">Linguistic <span class="accent">Versatility</span></h2>
+          <div class="lang-natives">
+            <span class="lang-tag">English (Professional)</span>
+            <span class="lang-tag">Malay (Native)</span>
+          </div>
+          <ul class="lang-list">
+            <li>
+              <span class="lang-name">English</span>
+              <span class="lang-level">Professional</span>
+              <div class="progress-bar"><span class="progress-fill" style="width: 95%"></span></div>
+            </li>
+            <li>
+              <span class="lang-name">Malay</span>
+              <span class="lang-level">Native</span>
+              <div class="progress-bar"><span class="progress-fill" style="width: 100%"></span></div>
+            </li>
+            <li>
+              <span class="lang-name">Arabic</span>
+              <span class="lang-level">Beginner</span>
+              <div class="progress-bar"><span class="progress-fill" style="width: 25%"></span></div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Technical Ecosystem -->
+        <div class="block card-block">
+          <h2 class="block-title">Technical <span class="accent">Ecosystem</span></h2>
+          <div class="tech-cards">
+            <div class="tech-card">
+              <h3 class="tech-card-title">Web & Data</h3>
+              <p class="tech-list">HTML/CSS · JavaScript · Git</p>
+            </div>
+            <div class="tech-card">
+              <h3 class="tech-card-title">Core Systems</h3>
+              <p class="tech-list">Problem solving · Clean code</p>
+            </div>
+            <div class="tech-card">
+              <h3 class="tech-card-title">Specialized</h3>
+              <div class="tech-tags">
+                <span class="tech-tag">Web Development</span>
+                <span class="tech-tag">Learning in public</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="content-section">
+      <h2 class="section-heading">Projects</h2>
       <div class="project-list">
         <div class="project-card">
           <h3 class="project-name">Portfolio site</h3>
-          <p class="project-desc">This page — a simple, responsive portfolio built with HTML, CSS, and a bit of JavaScript.</p>
+          <p class="project-desc">This page — a responsive portfolio with dark/light mode, resume, and links.</p>
           <a href="https://github.com/AriefDanial/portfolio" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
         </div>
         <div class="project-card project-card-muted">
           <h3 class="project-name">More coming soon</h3>
-          <p class="project-desc">I'll add more projects here as I build them. Stay tuned!</p>
+          <p class="project-desc">I'll add more projects here as I build them.</p>
         </div>
       </div>
     </section>
 
-    <!-- Connect card -->
-    <section class="card section animate-in">
-      <h2 class="card-title">Connect</h2>
-      <p class="card-desc">Find me on these platforms or drop an email.</p>
+    <!-- Education & Experience (compact) -->
+    <section id="education" class="content-section">
+      <h2 class="section-heading">Education &amp; Experience</h2>
+      <p class="about-text">
+        Software Engineer Intern with a focus on web development and clean code.
+        Passionate about learning new technologies and building user-friendly software.
+      </p>
+    </section>
+
+    <!-- Contact / Connect -->
+    <section id="contact" class="content-section">
+      <h2 class="section-heading">Contact</h2>
       <div class="links">
         <a href="resume.pdf" target="_blank" rel="noopener" class="link-card">
           <span class="link-label">Resume (PDF)</span>
@@ -108,10 +167,21 @@
       </div>
     </section>
 
-    <footer class="footer animate-in">
-      <p>Made with care · Hosted on GitHub Pages</p>
+    <!-- Footer strip - Analytics -->
+    <footer class="footer-strip">
+      <div class="footer-strip-inner">
+        <div class="footer-item">
+          <p class="footer-label">Audience reach</p>
+          <p class="footer-value"><span class="footer-dot"></span> Live portfolio engagement</p>
+        </div>
+        <div class="footer-item footer-hits">
+          <p class="footer-label">Total hits</p>
+          <p class="footer-count" id="total-hits">0000</p>
+        </div>
+      </div>
     </footer>
   </main>
+
   <script src="script.js"></script>
 </body>
 </html>

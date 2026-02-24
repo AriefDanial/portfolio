@@ -13,7 +13,8 @@
   }
 
   function setTheme(theme) {
-    body.setAttribute('data-theme', theme === 'dark' ? 'dark' : '');
+    if (theme === 'light') body.setAttribute('data-theme', 'light');
+    else body.removeAttribute('data-theme');
     localStorage.setItem(STORAGE_KEY, theme);
     if (btn && icon) {
       if (theme === 'dark') {
@@ -29,7 +30,7 @@
   }
 
   function toggleTheme() {
-    const current = body.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+    const current = body.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
     setTheme(current === 'dark' ? 'light' : 'dark');
   }
 
@@ -43,6 +44,16 @@
       if (!localStorage.getItem(STORAGE_KEY)) setTheme(e.matches ? 'dark' : 'light');
     });
   }
+})();
+
+// Total hits counter (stored in localStorage, display with leading zeros)
+(function () {
+  var el = document.getElementById('total-hits');
+  if (!el) return;
+  var key = 'portfolio-hits';
+  var hits = parseInt(localStorage.getItem(key) || '0', 10) + 1;
+  localStorage.setItem(key, String(hits));
+  el.textContent = String(hits).padStart(4, '0');
 })();
 
 // Link cards focus style
