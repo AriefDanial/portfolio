@@ -40,9 +40,16 @@
 
   // Optional: listen for system theme changes when no preference is set
   if (window.matchMedia) {
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+    var mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    var updateFromSystem = function (e) {
       if (!localStorage.getItem(STORAGE_KEY)) setTheme(e.matches ? 'dark' : 'light');
-    });
+    };
+
+    if (typeof mediaQuery.addEventListener === 'function') {
+      mediaQuery.addEventListener('change', updateFromSystem);
+    } else if (typeof mediaQuery.addListener === 'function') {
+      mediaQuery.addListener(updateFromSystem);
+    }
   }
 })();
 
