@@ -10,10 +10,6 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <button type="button" class="theme-toggle" aria-label="Switch theme" title="Switch theme">
-    <span class="theme-icon" aria-hidden="true">🌙</span>
-  </button>
-
   <!-- Header -->
   <header class="site-header">
     <a href="#home" class="logo">
@@ -30,7 +26,12 @@
       <a href="#education">Experience</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a href="resume.pdf" target="_blank" rel="noopener" class="btn-header">Download CV</a>
+    <div class="header-actions">
+      <button type="button" class="theme-toggle" aria-label="Switch theme" title="Switch theme">
+        <span class="theme-icon" aria-hidden="true">🌙</span>
+      </button>
+      <a href="resume.pdf" target="_blank" rel="noopener" class="btn-header">Download CV</a>
+    </div>
   </header>
 
   <div class="bg-gradient" aria-hidden="true"></div>
